@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I'll Start Living When… — Interactive Prototype V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="shell" aria-label="Low fidelity interactive art prototype">
+      <header class="topbar">
+        <span class="brand">I'll Start Living When…</span>
+        <nav class="storyline" id="storyline" aria-label="Emotional journey"></nav>
+        <span class="phase" id="phase">LOW-FI / SCENE 1 OF 5</span>
+      </header>
+      <main class="main">
+        <section class="stage" id="stage" aria-label="A quiet room with a present self and an empty chair">
+          <div class="corner">INTERACTIVE STUDY · V2</div>
+          <div class="window"></div>
+          <div class="beam" id="beam"></div>
+          <div class="wallline"></div>
+          <div class="floor"></div>
+          <div class="clock" id="clock"></div>
+          <div class="hint" id="hint">A ROOM. TWO CHAIRS. ONE POSSIBILITY.</div>
+          <div class="chair present" aria-hidden="true">
+            <div class="person">
+              <div class="head"></div>
+              <div class="torso"></div>
+            </div>
+            <div class="back"></div>
+            <div class="seat"></div>
+            <div class="leg l"></div>
+            <div class="leg r"></div>
+          </div>
+          <div class="chair future" id="futureChair" role="button" tabindex="0" aria-label="Explore the empty future chair">
+            <div class="back"></div>
+            <div class="seat"></div>
+            <div class="leg l"></div>
+            <div class="leg r"></div>
+          </div>
+          <div class="ghost" id="ghost"></div>
+          <div class="milestone" id="milestone" aria-live="polite"></div>
+          <div class="label present-label">Present self</div>
+          <div class="label future-label">Future self</div>
+          <div class="roomFade" id="roomFade"></div>
+        </section>
+        <section class="panel" id="panel" aria-live="polite"></section>
+      </main>
+      <footer class="bottom">
+        <span class="status">INTERACTIVE ART STUDY · CLASSROOM PROTOTYPE</span>
+        <div class="footRight">
+          <button id="showNotes" class="noteToggle" aria-expanded="false">Design rationale</button>
+          <button id="reset" aria-label="Restart the experience">↺ Restart</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <aside class="notes" id="notes" role="dialog" aria-modal="false" aria-labelledby="notesTitle">
+    <button class="notesClose" id="closeNotes">Close ×</button>
+    <p class="eyebrow">Teacher / critique view</p>
+    <h2 id="notesTitle">Why each element exists</h2>
+    <p><strong>Core question:</strong> What happens when we postpone satisfaction while waiting to become an imagined future self?</p>
+    <table>
+      <tbody>
+        <tr><th>Two chairs</th><td>Contrast between the present self (already here) and the future self (expected but absent).</td></tr>
+        <tr><th>Press and hold</th><td>The visitor must sustain an action to experience duration instead of just reading about waiting.</td></tr>
+        <tr><th>Shifting milestones</th><td>Graduation, career, and success replace one another—the moving finish line.</td></tr>
+        <tr><th>Incomplete figure</th><td>The imagined future self remains undefined rather than becoming a guaranteed reward.</td></tr>
+        <tr><th>Final stillness</th><td>Focus turns back toward the present self; the ending is a question, not a command to stop striving.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Emotional arc:</strong> Curiosity → expectation → prolonged waiting → frustration → reflection.</p>
+    <p><strong>Prototype note:</strong> This is a working low-fidelity study. The colors, furniture drawings, and effects are placeholders for the later visual-translation and Mid-Fi work.</p>
+  </aside>
+</body>
+<script src="script.js"></script>
+</html>
